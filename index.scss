@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+$bgColorH: #f0dc4e;
+$colorRgba: rgba(240, 220, 78, 0.5);
+$colorH: #2e302c;
+$bgColorRgba: rgba(46, 48, 55, 0.5);
+$raduis: 4px;
+$shadowG: 0px 4px 16px $colorH;
+$shadowY: 0px 4px 16px $bgColorH;
+$padding: 30px 20px;
+$marginTop: 20px;
+$doubleMarginTop: 40px;
+
+@mixin generalFlex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  @include generalFlex;
+  justify-content: center;
+}
+
+@mixin flexBetween {
+  @include generalFlex;
+  justify-content: space-between;
+}
+
+@mixin borderNoutline {
+  border: none;
+  outline: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mooli", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient($colorRgba, $bgColorRgba), url(/images/bg.jpg);
+  background-size: contain;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  .header {
+    border-bottom: 1px solid $colorH;
+    text-align: center;
+    padding: $padding;
+    margin-bottom: $marginTop * 4;
+    p {
+      color: $colorH;
+    }
+  }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    @include flexCenter;
+    margin-top: $marginTop * 4;
+    .project-container {
+      position: relative;
+      background-color: $colorH;
+      padding: $padding;
+      border-radius: $raduis;
+      box-shadow: $shadowG;
+      width: 500px;
+      margin: auto;
+      min-height: 800px;
+      .badge {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        background-color: $bgColorH;
+        padding: 5px 10px;
+        border-radius: $raduis;
+        box-shadow: $shadowY;
+        p {
+          color: $colorH;
+          font-weight: bold;
+        }
+      }
+      .title {
+        @include flexBetween;
+        flex-direction: row;
+        margin-top: $marginTop;
+
+        img {
+          width: 50px;
+          border-radius: 50%;
+        }
+        h2 {
+          color: $bgColorH;
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+      }
+      .content {
+        margin-top: $marginTop * 2;
+        padding: 10px;
+        color: $bgColorH;
+      }
+    }
+  }
+  .footer {
+    border-top: 1px solid $colorH;
+    text-align: center;
+    padding: $padding;
+    margin-top: $marginTop * 4;
+    a {
+      text-decoration: none;
+      color: gray;
+    }
+  }
+}
