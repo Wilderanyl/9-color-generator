@@ -26,6 +26,19 @@ $doubleMarginTop: 40px;
   justify-content: space-between;
 }
 
+@mixin buttonStyle {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: $raduis;
+  margin-left: 10px;
+  @include borderNoutline;
+  background-color: $bgColorH;
+  color: $colorH;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 @mixin borderNoutline {
   border: none;
   outline: none;
