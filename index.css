@@ -48,7 +48,6 @@ body .container .project-container {
   box-shadow: 0px 4px 16px #2e302c;
   width: 500px;
   margin: auto;
-  min-height: 800px;
 }
 body .container .project-container .badge {
   position: absolute;
@@ -77,6 +76,9 @@ body .container .project-container .title h2 {
   color: #f0dc4e;
   text-transform: uppercase;
   font-size: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body .container .project-container .content {
   margin-top: 40px;

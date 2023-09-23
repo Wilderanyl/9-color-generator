@@ -44,6 +44,13 @@ $doubleMarginTop: 40px;
   outline: none;
 }
 
+@mixin inputStyle {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: $raduis;
+  @include borderNoutline;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -89,7 +96,6 @@ body {
       box-shadow: $shadowG;
       width: 500px;
       margin: auto;
-      min-height: 800px;
       .badge {
         position: absolute;
         top: -10px;
@@ -97,7 +103,6 @@ body {
         background-color: $bgColorH;
         padding: 5px 10px;
         border-radius: $raduis;
-        // box-shadow: $shadowY;
         p {
           color: $colorH;
           font-weight: bold;
@@ -107,7 +112,6 @@ body {
         @include flexBetween;
         flex-direction: row;
         margin-top: $marginTop;
-
         img {
           width: 50px;
           border-radius: 50%;
@@ -116,6 +120,7 @@ body {
           color: $bgColorH;
           text-transform: uppercase;
           font-size: 20px;
+          user-select: none;
         }
       }
       .content {
