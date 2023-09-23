@@ -96,18 +96,6 @@ body {
       box-shadow: $shadowG;
       width: 500px;
       margin: auto;
-      .badge {
-        position: absolute;
-        top: -10px;
-        left: 20px;
-        background-color: $bgColorH;
-        padding: 5px 10px;
-        border-radius: $raduis;
-        p {
-          color: $colorH;
-          font-weight: bold;
-        }
-      }
       .title {
         @include flexBetween;
         flex-direction: row;
@@ -129,6 +117,17 @@ body {
         color: $bgColorH;
       }
     }
+  }
+  .project-container::before {
+    content: "Project No.";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: $bgColorH;
+    padding: 5px 10px;
+    border-radius: $raduis;
+    color: $colorH;
+    font-weight: bold;
   }
   .footer {
     border-top: 1px solid $colorH;

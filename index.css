@@ -49,18 +49,6 @@ body .container .project-container {
   width: 500px;
   margin: auto;
 }
-body .container .project-container .badge {
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  background-color: #f0dc4e;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-body .container .project-container .badge p {
-  color: #2e302c;
-  font-weight: bold;
-}
 body .container .project-container .title {
   display: flex;
   align-items: center;
@@ -84,6 +72,17 @@ body .container .project-container .content {
   margin-top: 40px;
   padding: 10px;
   color: #f0dc4e;
+}
+body .project-container::before {
+  content: "Project No.";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: #f0dc4e;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #2e302c;
+  font-weight: bold;
 }
 body .footer {
   border-top: 1px solid #2e302c;
