@@ -74,9 +74,24 @@ body .container .project-container .content {
   color: #f0dc4e;
 }
 body .container .project-container .btn {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 body .container .project-container .btn #createNote {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #f0dc4e;
+  color: #2e302c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .container .project-container .btn #deleteAll {
   font-size: 17px;
   padding: 10px;
   border-radius: 4px;

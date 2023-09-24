@@ -116,9 +116,12 @@ body {
         color: $bgColorH;
       }
       .btn {
-        margin-bottom: $marginTop;
-        
+        margin-bottom: $marginTop*2;
+        @include flexBetween;
         #createNote {
+          @include buttonStyle;
+        }
+        #deleteAll {
           @include buttonStyle;
         }
       }
