@@ -73,8 +73,64 @@ body .container .project-container .content {
   padding: 10px;
   color: #f0dc4e;
 }
+body .container .project-container .btn {
+  margin-bottom: 20px;
+}
+body .container .project-container .btn #createNote {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #f0dc4e;
+  color: #2e302c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .container .project-container .noteContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+body .container .project-container .noteContainer .singleNote {
+  padding: 20px;
+  border: 2px solid #f0dc4e;
+  border-radius: 4px;
+}
+body .container .project-container .noteContainer .singleNote textarea {
+  height: 200px;
+  width: 100%;
+  resize: none;
+  border-radius: 4px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #f0dc4e;
+  border: none;
+  outline: none;
+}
+body .container .project-container .noteContainer .singleNote .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+body .container .project-container .noteContainer .singleNote .btns button {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #f0dc4e;
+  color: #2e302c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 10px;
+}
 body .project-container::before {
-  content: "Project No.";
+  content: "Project 7";
   position: absolute;
   top: -10px;
   left: 20px;
