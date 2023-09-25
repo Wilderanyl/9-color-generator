@@ -115,50 +115,10 @@ body {
         padding: 10px;
         color: $bgColorH;
       }
-      .btn {
-        margin-bottom: $marginTop*2;
-        @include flexBetween;
-        #createNote {
-          @include buttonStyle;
-        }
-        #deleteAll {
-          @include buttonStyle;
-        }
-      }
-      .noteContainer {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: $marginTop;
-        .singleNote {
-          padding: 20px;
-          border: 2px solid $bgColorH;
-          border-radius: $raduis;
-          textarea {
-            height: 200px;
-            width: 100%;
-            resize: none;
-            border-radius: $raduis;
-            padding: 10px;
-            background: rgba(0, 0, 0,.2);
-            color: $bgColorH;
-            border: none;
-            outline: none;
-          }
-          .btns {
-            @include flexBetween;
-            margin-top: $marginTop;
-            button {
-              @include buttonStyle;
-              font-size: 10px;
-            }
-          }
-        }
-      }
     }
   }
   .project-container::before {
-    content: "Project 7";
+    content: "Project no.";
     position: absolute;
     top: -10px;
     left: 20px;
