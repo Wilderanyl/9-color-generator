@@ -74,7 +74,7 @@ body .container .project-container .content {
   color: #f0dc4e;
 }
 body .project-container::before {
-  content: "Project no.";
+  content: "Project 9";
   position: absolute;
   top: -10px;
   left: 20px;
